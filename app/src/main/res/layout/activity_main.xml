@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/button_b"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textOff="B"
+        android:textOn="B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/button_i"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textOff="I"
+        android:textOn="I"
+        app:layout_constraintStart_toEndOf="@+id/button_b"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/button_sans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SansSerif"
+        app:layout_constraintEnd_toStartOf="@+id/button_serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_b" />
+
+    <RadioButton
+        android:id="@+id/button_serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serif"
+        app:layout_constraintEnd_toStartOf="@+id/button_monospace"
+        app:layout_constraintStart_toEndOf="@+id/button_sans"
+        app:layout_constraintTop_toBottomOf="@+id/button_b" />
+
+    <RadioButton
+        android:id="@+id/button_monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_serif"
+        app:layout_constraintTop_toBottomOf="@+id/button_b" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Text size: 20"
+        app:layout_constraintBottom_toTopOf="@+id/button_serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_b"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#c0bcbc"
+        android:text="+"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_monospace"
+        app:layout_constraintEnd_toStartOf="@+id/button_minus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/size"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#c0bcbc"
+        android:text="-"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#F44336"
+        app:layout_constraintEnd_toStartOf="@+id/blue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sans"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <ImageButton
+        android:id="@+id/blue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        app:layout_constraintEnd_toStartOf="@+id/green"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/red"
+        app:layout_constraintTop_toTopOf="@+id/red"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/green"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toStartOf="@+id/blueLight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/blue"
+        app:layout_constraintTop_toTopOf="@+id/blue"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/blueLight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/pink"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/green"
+        app:layout_constraintTop_toTopOf="@+id/green"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/pink"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#E91E63"
+        app:layout_constraintEnd_toStartOf="@+id/yellow"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/blueLight"
+        app:layout_constraintTop_toTopOf="@+id/blueLight"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/yellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFEB3B"
+        app:layout_constraintEnd_toStartOf="@+id/black"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pink"
+        app:layout_constraintTop_toTopOf="@+id/pink"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/black"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yellow"
+        app:layout_constraintTop_toTopOf="@+id/yellow"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
