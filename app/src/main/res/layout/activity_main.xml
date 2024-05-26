@@ -35,39 +35,49 @@
         app:layout_constraintStart_toEndOf="@+id/button_b"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/button_sans"
+    <RadioGroup
+        android:id="@+id/RGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SansSerif"
-        app:layout_constraintEnd_toStartOf="@+id/button_serif"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_b" />
-
-    <RadioButton
-        android:id="@+id/button_serif"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Serif"
-        app:layout_constraintEnd_toStartOf="@+id/button_monospace"
-        app:layout_constraintStart_toEndOf="@+id/button_sans"
-        app:layout_constraintTop_toBottomOf="@+id/button_b" />
-
-    <RadioButton
-        android:id="@+id/button_monospace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Monospace"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_serif"
-        app:layout_constraintTop_toBottomOf="@+id/button_b" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_b">
+
+        <RadioButton
+            android:id="@+id/button_sans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SansSerif"
+            app:layout_constraintEnd_toStartOf="@+id/button_serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_b" />
+
+        <RadioButton
+            android:id="@+id/button_serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serif"
+            app:layout_constraintEnd_toStartOf="@+id/button_monospace"
+            app:layout_constraintStart_toEndOf="@+id/button_sans"
+            app:layout_constraintTop_toBottomOf="@+id/button_b" />
+
+        <RadioButton
+            android:id="@+id/button_monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_serif"
+            app:layout_constraintTop_toBottomOf="@+id/button_b" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/size"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Text size: 20"
-        app:layout_constraintBottom_toTopOf="@+id/button_serif"
+        app:layout_constraintBottom_toTopOf="@+id/RGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/button_b"
         app:layout_constraintTop_toTopOf="parent" />
@@ -80,7 +90,7 @@
         android:backgroundTint="#c0bcbc"
         android:text="+"
         app:cornerRadius="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_monospace"
+        app:layout_constraintBottom_toTopOf="@+id/RGroup"
         app:layout_constraintEnd_toStartOf="@+id/button_minus"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/size"
@@ -95,7 +105,7 @@
         android:backgroundTint="#c0bcbc"
         android:text="-"
         app:cornerRadius="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_monospace"
+        app:layout_constraintBottom_toTopOf="@+id/RGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -108,7 +118,7 @@
         app:layout_constraintEnd_toStartOf="@+id/blue"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sans"
+        app:layout_constraintTop_toBottomOf="@+id/RGroup"
         tools:srcCompat="@tools:sample/avatars" />
 
 
