@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "simpleTextEditor"
+rootProject.name = "resouces"
 include(":app")

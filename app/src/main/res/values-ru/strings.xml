@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ресурсы</string>
+    <string name="action_settings">Настройки</string>
+    <string name="text">Привет, мир!</string>
+    <string name="red">Красный</string>
+    <string name="green">Зелёный</string>
+    <string name="blue">Синий</string>
+    <string name="color">Цвет</string>
+    <string name="image">Изображение</string>
+    <string name="firstImg">первое изображение</string>
+    <string name="secondImg">второе изображение</string>
+    <string name="thirdImg">третье изображение</string>
+    <string name="font">Шрифт</string>
+    <string name="sans_serif">Sans Serif</string>
+    <string name="serif">Serif</string>
+    <string name="monospace">Monospace</string>
+    <string name="add">Добавить текстовое поле</string>
+    <string name="exit">Выход</string>
+</resources>

@@ -1,4 +1,4 @@
-package com.example.simpletexteditor;
+package com.example.resouces;
 
 import org.junit.Test;
 

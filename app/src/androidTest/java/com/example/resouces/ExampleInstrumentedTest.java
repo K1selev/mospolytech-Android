@@ -1,4 +1,4 @@
-package com.example.simpletexteditor;
+package com.example.resouces;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.simpletexteditor", appContext.getPackageName());
+        assertEquals("com.example.resouces", appContext.getPackageName());
     }
 }
