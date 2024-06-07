@@ -1,21 +1,10 @@
 <resources>
-    <string name="app_name">Resources</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-<!--    <string name="first_fragment_label">First Fragment</string>-->
-    <string name="text">Hello world!</string>
-    <string name="red">Red</string>
-    <string name="green">Green</string>
-    <string name="blue">Blue</string>
-    <string name="color">Color</string>
-    <string name="image">Image</string>
-    <string name="firstImg">first Image</string>
-    <string name="secondImg">second Image</string>
-    <string name="thirdImg">third Image</string>
-    <string name="font">Font</string>
-    <string name="sans_serif">Sans Serif</string>
-    <string name="serif">Serif</string>
-    <string name="monospace">Monospace</string>
-    <string name="add">Add text view</string>
-    <string name="exit">Exit</string>
+    <string name="app_name">notification</string>
+    <string name="channel_name">notification</string>
+    <string name="channel_description">notification descr</string>
+    <string name="dialog_message">Вы уверены, что хотите выйти?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="toast_notif">Всплывающее уведомление!</string>
+
 </resources>

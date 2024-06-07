@@ -1,4 +1,4 @@
-package com.example.resouces;
+package com.example.notification;
 
 import org.junit.Test;
 
